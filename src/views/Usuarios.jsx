@@ -3,6 +3,7 @@ import LastUserDetail from "../Components/Usuarios/LastUserDetail/LastUserDetail
 import UserInfoCard from "../Components/Usuarios/UserInfoCard/UserInfoCard";
 import { faUserClock, faUsers, faPersonCane } from "@fortawesome/free-solid-svg-icons";
 import "./Usuarios.css";
+import request from '../utils/Request'
 
 
 function Usuarios() {
@@ -11,7 +12,7 @@ function Usuarios() {
 
   const getUsers = async () => {
     try {
-      const result = await fetch(`http://localhost:3001/api/users`);
+      const result = await fetch(`${request}/api/users`);
       const usersJson = await result.json();
       console.log(usersJson);
       setUsers(usersJson);
