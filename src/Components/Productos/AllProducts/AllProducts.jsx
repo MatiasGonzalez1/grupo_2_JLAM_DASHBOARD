@@ -4,13 +4,14 @@ import Formatter from "../../../utils/Formatter";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Request } from '../../../utils/Request';
 
 export const AllProducts = () => {
   const [products, setProducts] = useState(null);
   const [page, setPage] = useState(0);
 
   useEffect(() => {
-    fetch(`http://localhost:3001/api/product?page=${page}`)
+    fetch(`${Request}/api/product?page=${page}`)
       .then((response) => response.json())
       .then((products) => {
         setProducts(products.products);

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'; 
+import { Request } from '../../../utils/Request';
 import "./CategoriesCards.css";
 
 const CategoriesCards=()=>{
@@ -6,7 +7,7 @@ const CategoriesCards=()=>{
 
     const getCategories = async()=>{
         try {
-            const result = await fetch("http://localhost:3001/api/product")
+            const result = await fetch(`${Request}/api/product`)
             const categoriesJson = await result.json();
             setCategories(categoriesJson.countByCategory);
         } catch (error) {

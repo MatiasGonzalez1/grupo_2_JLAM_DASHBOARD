@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 // import Img from "../../../Assets/images/ProductImg/blend.png";
 import Formatter from '../../../utils/Formatter.js';
 import "./ProductDetailData.css";
+import { Request } from '../../../utils/Request';
+
 
 function ProductDetailData() {
     let idProduct = useParams();
@@ -11,7 +13,7 @@ function ProductDetailData() {
 
     const getItemDetail = async()=>{
         try {
-            const result = await fetch(`http://localhost:3001/api/product/${idProduct.id}`)
+            const result = await fetch(`${Request}/api/product/${idProduct.id}`)
             const productJson = await result.json();
             setProduct(productJson);
         } catch (error) {
