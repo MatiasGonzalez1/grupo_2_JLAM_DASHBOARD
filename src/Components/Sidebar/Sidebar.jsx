@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faUser, faWineBottle, faWineGlass } from "@fortawesome/free-solid-svg-icons";
 import Img from "../../Assets/images/admin@admin.com_1657413736084.png";
-import { Request } from '../../utils/Request';
+import Request from '../../utils/Request';
 
 function Sidebar() {
     const [usuarios, setUsuarios] = useState([]);

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'; 
 import Formatter from '../../../utils/Formatter.js';
-import { Request } from '../../../utils/Request.js';
+import Request from '../../../utils/Request.js';
 import "./LastAddedProducts.css";
 
 const LastAddedProducts=()=>{

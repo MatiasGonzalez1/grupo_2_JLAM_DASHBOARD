@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {faUserGroup} from "@fortawesome/free-solid-svg-icons";
 import OneCard from "../../../utils/OneCard/OneCard";
-import {Request} from '../../../utils/Request';
+import Request from '../../../utils/Request';
 
 function CartTotalUsers() {
     const [usuarios, setUsuarios] = useState(undefined);

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 // import Img from "../../../Assets/images/ProductImg/blend.png";
 import Formatter from '../../../utils/Formatter.js';
 import "./ProductDetailData.css";
-import { Request } from '../../../utils/Request';
+import Request from '../../../utils/Request';
 
 
 function ProductDetailData() {

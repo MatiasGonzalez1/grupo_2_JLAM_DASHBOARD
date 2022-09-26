@@ -1,1 +1,3 @@
-export const Request = 'https://grupo2jlam-production-8382.up.railway.app';
+const Request = 'https://grupo2jlam-production-8382.up.railway.app';
+
+export default Request;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'; 
-import { Request } from '../../../utils/Request';
+import Request  from '../../../utils/Request';
 import "./CategoriesCards.css";
 
 const CategoriesCards=()=>{

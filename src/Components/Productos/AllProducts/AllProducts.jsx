@@ -4,7 +4,7 @@ import Formatter from "../../../utils/Formatter";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Request } from '../../../utils/Request';
+import Request from '../../../utils/Request';
 
 export const AllProducts = () => {
   const [products, setProducts] = useState(null);
